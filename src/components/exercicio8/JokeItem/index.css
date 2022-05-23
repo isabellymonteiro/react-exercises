@@ -1,0 +1,17 @@
+.exercise8__joke__container {
+  text-align: center;
+  background-color: #FFF;
+  padding: 1rem 1.875rem;
+  max-width: 380px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.exercise8__joke__setup {
+  font-size: 1.5rem;
+}
+
+.exercise8__joke__punchline {
+  font-size: 1rem;
+}
