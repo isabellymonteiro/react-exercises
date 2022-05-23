@@ -1,0 +1,16 @@
+.exercise6__list {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #DADADA;
+  border-radius: 6px;
+}
+
+.exercise6__listBody :last-child :last-child {
+  border-bottom: 0;
+}
+
+.exercise6__list__item {
+  padding: 15px 30px;
+  border-bottom: 1px solid #DADADA;
+}
+
