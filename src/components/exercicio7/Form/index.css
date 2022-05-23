@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.form__input, .form__button {
+  width: 100%;
+}
+
+.form__input {
+  border-radius: 8px;
+  border: 1px solid #DADADA;
+  padding: 10px;
+}
+
+.form__input:focus {
+  outline: 1px solid #000;
+}
+
+.form__button {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #F0003C;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 6px 1px #A30036;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.form__button:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 #A30036;
+}
