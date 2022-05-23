@@ -1,0 +1,9 @@
+.exercise1__square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #FEC800;
+  margin: 0 auto;
+}
