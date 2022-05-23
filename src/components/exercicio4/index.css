@@ -1,0 +1,10 @@
+.exercise4__paragraph {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.exercise4__button {
+  display: block;
+  font-size: 1rem;
+  margin: 0 auto;
+}
