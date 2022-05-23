@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import exercises from '../../exercicios'
+import exercises from '@/exercicios'
 import './index.css'
 function Menu() {
 	return (
