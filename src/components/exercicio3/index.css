@@ -1,0 +1,9 @@
+.center__div {
+  display: flex;
+  justify-content: center;
+}
+
+.exercise3__container {
+  display: inline-flex;
+  gap: 10px;
+}
