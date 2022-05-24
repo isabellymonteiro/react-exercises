@@ -1,21 +1,21 @@
-import { useState } from "react";
-import "./index.css";
+import { useState } from "react"
+import "./index.css"
 
 const Form = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
 
   const handleFirstNameChange = (e) => {
-    setFirstName(e.target.value);
+    setFirstName(e.target.value)
   };
 
   const handleLastNameChange = (e) => {
-    setLastName(e.target.value);
+    setLastName(e.target.value)
   };
 
   const greet = () => {
-    alert(`Hello ${firstName} ${lastName}!`);
-  };
+    alert(`Hello ${firstName} ${lastName}!`)
+  }
 
   return (
     <form onSubmit={greet} className="form">
@@ -37,7 +37,7 @@ const Form = () => {
       ></input>
       <button className="form__button" type="submit">greet me</button>
     </form>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

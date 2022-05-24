@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react'
 import UserCard from './UserCard'
 import './index.css'
-import { useEffect, useState } from 'react'
+import exercicios from '@/exercicios'
 
 function Exercicio9() {
   const [userList, setUserList] = useState('')
@@ -32,7 +33,7 @@ function Exercicio9() {
 
 	return (
     <>
-      <h1 className='title'>Exercicio9</h1>
+      <h1 className='title'>{exercicios[8]}</h1>
       <button className="fetch__button" onClick={fetchUsers}>Fetch Random</button>
       <ul className='users'>
         {userList}

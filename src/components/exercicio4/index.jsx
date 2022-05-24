@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './index.css'
+import exercicios from '@/exercicios'
 
 function Exercicio4() {
 	const [count, setCount] = useState(0)
@@ -10,7 +11,7 @@ function Exercicio4() {
 
 	return (
 		<>
-			<h1 className='title'>Exercicio4</h1>
+			<h1 className='title'>{exercicios[3]}</h1>
 			<p className='exercise4__paragraph'>{`Button has been clicked: ${count} times`}</p>
 			<button className="exercise4__button" onClick={incrementCount}>
         Click Me

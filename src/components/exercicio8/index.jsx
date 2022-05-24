@@ -1,5 +1,6 @@
 import JokeItem from './JokeItem'
 import './index.css'
+import exercicios from '@/exercicios'
 
 function Exercicio8() {
   const data = [
@@ -21,7 +22,7 @@ function Exercicio8() {
 
 	return (
     <>
-      <h1 className='title'>Exercicio8</h1>
+      <h1 className='title'>{exercicios[7]}</h1>
       <div className='center__div'>
         <ul className='exercise8__jokeList'>
           {jokeItems}

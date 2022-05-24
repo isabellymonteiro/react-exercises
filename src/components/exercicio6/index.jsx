@@ -1,5 +1,6 @@
 import List from "./List"
 import './index.css'
+import exercicios from '@/exercicios'
 
 function Exercicio6() {
 	const data = [
@@ -26,7 +27,7 @@ function Exercicio6() {
 	]
 	return (
 		<>
-			<h1 className='title'>Exercicio6</h1>
+			<h1 className='title'>{exercicios[5]}</h1>
 			<div className="exercise6__list__container">
 				<List listData={data} />
 			</div>

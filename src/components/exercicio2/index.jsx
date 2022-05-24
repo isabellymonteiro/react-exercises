@@ -1,4 +1,5 @@
 import './index.css'
+import exercicios from '@/exercicios'
 
 function Exercicio2() {
 	const alertMessage = (message) => {
@@ -7,7 +8,7 @@ function Exercicio2() {
 
   return (
     <>
-      <h1 className="title">Exercicio2</h1>
+      <h1 className="title">{exercicios[1]}</h1>
       <button className="exercise2__button" onClick={() => alertMessage('Clicked!')}>
         Click Me
       </button>

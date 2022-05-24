@@ -1,10 +1,11 @@
 import Button from './Button'
 import './index.css'
+import exercicios from '@/exercicios'
 
 function Exercicio3() {
 	return (
 		<>
-			<h1 className='title'>Exercicio3</h1>
+			<h1 className='title'>{exercicios[2]}</h1>
 			<div className='center__div'>
 				<div className='exercise3__container'>
 					<Button>Button 1</Button>
