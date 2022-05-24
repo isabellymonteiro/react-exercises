@@ -1,0 +1,119 @@
+.userCard {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.userCard__content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.userCard__content--front, .userCard__content--back {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.userCard__image {
+  max-width: 100%;
+}
+
+.userCard__heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.userCard__name {
+  margin: 1rem 0 0 0;
+}
+
+.userCard__gender {
+  margin: 0 0 10px 0;
+}
+
+.userCard__profession {
+  margin: 0;
+}
+
+.userCard__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.userCard__contact--title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.userCard__email {
+  margin-bottom: 10px 0;
+}
+
+
+@media (min-width: 500px) {
+  .userCard__heading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .userCard__name, .userCard__gender {
+    margin: 1rem 0;
+  }
+
+  .userCard__content--front, .userCard__content--back {
+    padding: 1em 2em;
+    text-align: start;
+  }
+}
+
+@media (hover: hover) { /* card flip on devices that allow hover */
+  .userCard {
+    height: 460px;
+    perspective: 1000px;
+  }
+  
+  .userCard__content {
+    position: relative;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+  }
+  
+  .userCard:hover .userCard__content {
+    transform: rotateY(180deg);
+  }
+  
+  .userCard__content--front, .userCard__content--back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+  
+  .userCard__content--back {
+    transform: rotateY(180deg);
+  }
+  
+  .userCard__contact {
+    align-items: center;
+  }
+  
+  .userCard__contact--title {
+    margin: 10px 0;
+    font-size: 1.375rem;
+  }
+}
