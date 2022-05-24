@@ -1,22 +1,10 @@
 import JokeItem from './JokeItem'
 import './index.css'
 import exercicios from '@/exercicios'
+import jokeData from './jokeData.json'
 
 function Exercicio8() {
-  const data = [
-    {
-      id: 1,
-      setup: "What's the best thing about a Boolean?",
-      punchline: "Even if you're wrong, you're only off by a bit"
-    },
-    {
-      id: 2,
-      setup: "Why do programmers wear glasses?",
-      punchline: "Because they need to C#"
-    }
-  ]
-
-  const jokeItems = data.map(({ id, setup, punchline}) => {
+  const jokeItems = jokeData.map(({ id, setup, punchline}) => {
     return <JokeItem key={id} setup={setup} punchline={punchline} />
   })
 
