@@ -38,6 +38,13 @@
   max-width: 400px;
 }
 
+.users--loading, .users--error {
+  color: #245bc9;
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
 @media (min-width: 500px) {
   .users {
     gap: 2rem;
