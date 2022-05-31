@@ -1,13 +1,13 @@
 import './index.css'
 
-const Button = ({ children }) => {
+const Button = ({ content }) => {
   const handleOnClick = () => {
-      alert(`You clicked on ${children}`)
+      alert(`You clicked on ${content}`)
   }
 
   return (
     <button className='exercise3__button' onClick={handleOnClick}>
-      {children}
+      {content}
     </button>
   )
 }

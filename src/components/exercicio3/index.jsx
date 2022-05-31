@@ -8,9 +8,9 @@ function Exercicio3() {
 			<h1 className='title'>{exercicios[2]}</h1>
 			<div className='center__div'>
 				<div className='exercise3__container'>
-					<Button>Button 1</Button>
-					<Button>Button 2</Button>
-					<Button>Button 3</Button>
+					<Button content='Button 1' />
+					<Button content='Button 2' />
+					<Button content='Button 3' />
 				</div>
 			</div>
 		</>
